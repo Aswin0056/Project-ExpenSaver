@@ -1,0 +1,96 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .register-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+
+  .register-logo{
+    margin-top: -30px;
+    margin-right: 50px;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+
+  
+  .register-button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-button:hover {
+    background-color: #218838;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+
+  /* For small screens (phones) */
+@media screen and (max-width: 600px) {
+  .register-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .register-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* For tablets and medium screens */
+@media screen and (max-width: 900px) {
+  .register-box {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1200px) {
+  .register-box {
+    width: 400px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

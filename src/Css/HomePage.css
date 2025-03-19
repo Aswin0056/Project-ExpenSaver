@@ -1,0 +1,283 @@
+/* General Page Layout */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(81, 59, 85);
+    color: white;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.homepage-logo {
+    width: 70px;
+    height: 50px;
+    margin-right: -40px;
+    margin-left: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    flex: 1;
+    text-align: center;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .register-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.register-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Layout */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 50px;
+}
+
+/* Left Section: Logo */
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.large-logo {
+    width: 250px;
+    height: auto;
+    margin-top: -50px;
+}
+
+/* Right Section: Description */
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.right-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-section ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 55%;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .left-section {
+        order: 1;
+    }
+
+    .large-logo {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .right-section {
+        order: 2;
+        padding: 10px;
+    }
+
+    .right-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .right-section p,
+    .right-section ul li {
+        font-size: 0.9rem;
+    }
+    .homepage-logo{
+        margin-left: -25px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .homepage-logo {
+        width: 50px;
+        height: 40px;
+    }
+
+    .search-bar {
+        width: 55%;
+    }
+
+    .nav-buttons {
+        display: flex;
+        gap: 5px;
+    }
+
+    .login-btn,
+    .register-btn {
+        width: 100px;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .large-logo {
+        width: 150px;
+        margin-top: 50px;
+    }
+
+    .right-section {
+        padding: 10px;
+    }
+
+    .right-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .right-section p,
+    .right-section ul li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .search-bar {
+        width: 55%;
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .nav-buttons {
+        display: flex;
+        gap: 5px;
+    }
+
+    .login-btn,
+    .register-btn {
+        width: 90px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .large-logo {
+        margin-top: 50px;
+        width: 120px;
+    }
+
+    .right-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .right-section p,
+    .right-section ul li {
+        font-size: 0.8rem;
+    }
+}

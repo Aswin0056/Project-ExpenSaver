@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+.expenses-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Expenses Content */
+.expenses-content {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Expense Table */
+.expense-table {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.edit-button, .update-button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+.cancel-button {
+  background-color: rgba(128, 128, 128, 0.658);
+  font-weight: bolder;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  color: black;
+}
+
+.cancel-button:hover{
+  background-color: rgba(255, 0, 0, 0.712);
+}
+
+.action-button{
+  display: flex;
+  gap: 15px;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+
+/* For tablets and small screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .expenses-content {
+    padding: 20px;
+  }
+
+  .expense-table {
+    width: 95%;
+  }
+
+  .edit-button, .update-button, .cancel-button, .delete-button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .action-button {
+    gap: 10px;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .expenses-content {
+    padding: 15px;
+    margin-left: -50px;
+  }
+
+  .expense-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .expense-table th,
+  .expense-table td {
+    padding: 8px;
+  }
+
+  .edit-button, .update-button, .cancel-button, .delete-button {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .action-button {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .expenses-content {
+    padding: 10px;
+  }
+
+  .expense-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .expense-table th,
+  .expense-table td {
+    padding: 6px;
+  }
+
+  .action-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .edit-button, .update-button, .cancel-button, .delete-button {
+    padding: 3px 6px;
+    font-size: 10px;
+    width: 100%;
+  }
+}
